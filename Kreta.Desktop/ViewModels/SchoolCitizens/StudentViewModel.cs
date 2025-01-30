@@ -47,32 +47,33 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
         public void DoSave(Student studentDto)
         {
             Students.Add(studentDto);
-            SelectedStudent = new Student();
-            SelectedStudent.BirthDay = DateTime.Now.AddYears(-14);
-            OnPropertyChanged(nameof(SelectedStudent));
+            ClearForm();
         }
 
         [RelayCommand]
         public void DoNewStudent()
         {
-            SelectedStudent = new Student();
-            SelectedStudent.BirthDay = DateTime.Now.AddYears(-14);
-            OnPropertyChanged(nameof(SelectedStudent));
+            ClearForm();
         }
 
         [RelayCommand]
         public void DoDelete(Student studentDto)
         {
             Students.Remove(studentDto);
-            SelectedStudent = new Student();
-            SelectedStudent.BirthDay = DateTime.Now.AddYears(-14);
-            OnPropertyChanged(nameof(SelectedStudent));
+            ClearForm();
         }
 
         private async Task UpdateViewAsync()
         {
             List<Student> students = await _httpService.GetAllAsync();
             Students = new ObservableCollection<Student>(students);
+        }
+
+        private void ClearForm()
+        {
+            SelectedStudent = new Student();
+            SelectedStudent.BirthDay = DateTime.Now.AddYears(-14);
+            OnPropertyChanged(nameof(SelectedStudent));
         }
     }
 }
