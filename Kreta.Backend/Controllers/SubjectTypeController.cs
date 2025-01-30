@@ -1,7 +1,7 @@
 ﻿using Kreta.Backend.Repos.Base;
 using Kreta.Shared.Assamblers;
 using Kreta.Shared.Models;
-using Kreta.Shared.Models.Entites;
+using Kreta.Shared.Models.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kreta.Backend.Controllers

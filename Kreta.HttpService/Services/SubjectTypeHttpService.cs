@@ -1,6 +1,6 @@
 ﻿using Kreta.Shared.Assamblers;
 using Kreta.Shared.Models;
-using Kreta.Shared.Models.Entites;
+using Kreta.Shared.Models.Enums;
 
 namespace Kreta.HttpService.Services
 {

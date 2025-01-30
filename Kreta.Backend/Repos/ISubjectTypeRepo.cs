@@ -1,5 +1,5 @@
 ﻿using Kreta.Backend.Repos.Base;
-using Kreta.Shared.Models.Entites;
+using Kreta.Shared.Models.Enums;
 
 namespace Kreta.Backend.Repos
 {

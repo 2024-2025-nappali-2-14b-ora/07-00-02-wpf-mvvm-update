@@ -1,5 +1,5 @@
 ﻿using Kreta.Shared.Models;
-using Kreta.Shared.Models.Entites;
+using Kreta.Shared.Models.Enums;
 
 namespace Kreta.Shared.Extensions
 {
