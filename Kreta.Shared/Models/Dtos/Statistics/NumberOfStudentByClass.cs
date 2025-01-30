@@ -1,4 +1,6 @@
-﻿namespace Kreta.Shared.Models.Entites
+﻿using Kreta.Shared.Models.Entites;
+
+namespace Kreta.Shared.Models.Dtos.Statistics
 {
     public class NumberOfStudentByClass
     {
