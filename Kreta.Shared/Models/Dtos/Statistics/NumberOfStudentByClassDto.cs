@@ -2,7 +2,7 @@
 
 namespace Kreta.Shared.Models.Dtos.Statistics
 {
-    public class NumberOfStudentByClass
+    public class NumberOfStudentByClassDto
     {
         public int Grade { get; set; }
         public SchoolClassType Type { get; set; }
