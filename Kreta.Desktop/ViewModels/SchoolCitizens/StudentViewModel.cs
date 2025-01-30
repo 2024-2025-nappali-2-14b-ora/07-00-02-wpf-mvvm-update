@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System;
 using Kreta.Shared.Models.Entites.SchoolCitizens;
 using Kreta.Shared.Extensions;
+using Kreta.Shared.Models.Responses;
 
 namespace Kreta.Desktop.ViewModels.SchoolCitizens
 {
@@ -45,10 +46,18 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
         }
 
         [RelayCommand]
-        public void DoSave(Student studentDto)
+        public async Task DoSave(Student student)
         {
-            Students.Add(studentDto);
-            ClearForm();
+            if (student is not null)
+            {
+                Response response = new();
+                if (student.HasId)
+                    response = await _httpService.UpdateAsync(student);
+                else
+                    response = await _httpService.InsertAsync(student);
+                ClearForm();
+                await UpdateViewAsync();
+            }
         }
 
         [RelayCommand]
