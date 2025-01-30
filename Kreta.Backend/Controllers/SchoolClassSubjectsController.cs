@@ -1,7 +1,7 @@
 ﻿using Kreta.Backend.Repos.SwitchTables;
 using Kreta.Shared.Assamblers;
 using Kreta.Shared.Extensions;
-using Kreta.Shared.Models;
+using Kreta.Shared.Models.Dtos;
 using Kreta.Shared.Models.Entites.SwitchTable;
 using Kreta.Shared.Models.Responses;
 using Microsoft.AspNetCore.Mvc;

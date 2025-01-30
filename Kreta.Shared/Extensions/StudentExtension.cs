@@ -1,4 +1,4 @@
-﻿using Kreta.Shared.Models;
+﻿using Kreta.Shared.Models.Dtos;
 using Kreta.Shared.Models.Entites.SchoolCitizens;
 
 namespace Kreta.Shared.Extensions

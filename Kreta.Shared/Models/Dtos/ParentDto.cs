@@ -1,7 +1,7 @@
 ﻿using Kreta.Shared.Models.Entites;
 using Kreta.Shared.Models.Entites.SchoolCitizens;
 
-namespace Kreta.Shared.Models
+namespace Kreta.Shared.Models.Dtos
 {
     public class ParentDto
     {

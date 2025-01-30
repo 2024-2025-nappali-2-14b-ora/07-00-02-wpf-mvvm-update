@@ -1,6 +1,6 @@
 ﻿using Kreta.Backend.Repos.Base;
 using Kreta.Shared.Assamblers;
-using Kreta.Shared.Models;
+using Kreta.Shared.Models.Dtos;
 using Kreta.Shared.Models.Enums;
 using Microsoft.AspNetCore.Mvc;
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kreta.Shared.Models
+namespace Kreta.Shared.Models.Dtos
 {
     public class SubjectTypeDto
     {

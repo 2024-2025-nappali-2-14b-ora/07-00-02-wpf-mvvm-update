@@ -1,6 +1,6 @@
 ﻿using Kreta.Shared.Models.Entites;
 
-namespace Kreta.Shared.Models
+namespace Kreta.Shared.Models.Dtos
 {
     public class TypeOfEducationDto
     {

@@ -1,6 +1,6 @@
 ﻿using Kreta.Shared.Assamblers;
 using Kreta.Shared.Models.Entites.SchoolCitizens;
-using Kreta.Shared.Models;
+using Kreta.Shared.Models.Dtos;
 
 namespace Kreta.HttpService.Services
 {

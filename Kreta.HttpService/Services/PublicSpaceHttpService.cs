@@ -1,5 +1,5 @@
 ﻿using Kreta.Shared.Assamblers;
-using Kreta.Shared.Models;
+using Kreta.Shared.Models.Dtos;
 using Kreta.Shared.Models.Entites;
 
 namespace Kreta.HttpService.Services
