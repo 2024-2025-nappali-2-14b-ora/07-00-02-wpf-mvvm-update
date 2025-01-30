@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System;
 using Kreta.Shared.Models.Entites.SchoolCitizens;
+using Kreta.Shared.Extensions;
 
 namespace Kreta.Desktop.ViewModels.SchoolCitizens
 {
@@ -57,10 +58,14 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
         }
 
         [RelayCommand]
-        public void DoDelete(Student studentDto)
+        public async Task DoDelete(Student student)
         {
-            Students.Remove(studentDto);
-            ClearForm();
+            if (student is not null)
+            {
+                await _httpService.DeleteAsync(student.Id);
+                ClearForm();
+                await UpdateViewAsync();
+            }
         }
 
         private async Task UpdateViewAsync()

@@ -67,7 +67,7 @@
                      HorizontalAlignment="Right"
                      MinWidth="80"
                      Content="Törlés"
-                     Command="{Binding DoRemoveCommand}"
+                     Command="{Binding DoDeleteCommand}"
                      CommandParameter="{Binding SelectedStudent}"
                      />
         </StackPanel>
