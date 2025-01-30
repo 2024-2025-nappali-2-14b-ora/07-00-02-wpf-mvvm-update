@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Http.Json;
 
-namespace Kreta.HttpService.Services
+namespace Kreta.HttpService.Services.Base
 {
     public class BaseService<TEntity, TEntityDto> : IBaseHttpService<TEntity>
         where TEntity : class, IDbEntity<TEntity>, new()
@@ -25,7 +25,7 @@ namespace Kreta.HttpService.Services
             if (httpClientFactory is not null)
                 _httpClient = httpClientFactory.CreateClient("KretaApi");
             else
-                _httpClient= new HttpClient();
+                _httpClient = new HttpClient();
 
             _assambler = assambler ?? throw new ArgumentNullException(nameof(httpClientFactory));
         }
